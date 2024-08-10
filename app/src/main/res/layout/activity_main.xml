@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="630sp"
+        android:textSize="30sp"
+        android:text="JAYVEER"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:textColor="#C8C803"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="30sp"
+        android:text="___Calculator___"
+        android:textColor="#E4922A"
+        android:textSize="31sp"
+        android:textStyle="italic"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="0"
+        android:textSize="50sp" />
+
+
+
+    <EditText
+        android:id="@+id/etFirstNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResult"
+        android:layout_margin="20dp"
+        android:hint="First Number"
+        android:textColorHint="#C55454"
+        android:textColor="@color/white"
+        android:inputType="numberDecimal"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etSecondNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etFirstNumber"
+        android:layout_margin="20dp"
+        android:hint="Second Number"
+        android:textColor="@color/white"
+        android:textColorHint="#C55454"
+        android:inputType="numberDecimal"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSecondNumber"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#1EEB26"
+            android:text="+"
+            android:textSize="29sp"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1EEB26"
+            android:layout_margin="10dp"
+            android:textSize="29sp"
+            android:textColor="@color/black"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="*"
+            android:backgroundTint="#1EEB26"
+            android:textSize="29sp"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1EEB26"
+            android:layout_marginRight="5dp"
+            android:textSize="29sp"
+            android:textColor="@color/black"
+            android:text="/" />
+
+    </LinearLayout>
+
+</RelativeLayout>
